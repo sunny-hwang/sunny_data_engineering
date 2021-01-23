@@ -1,3 +1,5 @@
+-- SQL 연습하기
+
 -- (1) CREATE, INSERT, SELECT
 CREATE TABLE sunhee_bigdata.channel(
 	channel varchar(32) primary key
