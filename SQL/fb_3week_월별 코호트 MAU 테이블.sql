@@ -1,7 +1,7 @@
 -- 월별 코호트 MAU(Monthly Active User) 테이블 만들기
 -- cohort month : 사용자별 처음 나타난 월
 -- 시간의 흐름에 따라 월별로 사용자 추이를 분석하는 용도
-
+-- 코호트 분석 : https://analyticsmarketing.co.kr/digital-analytics/google-analytics/1527/
 
 
 SELECT
