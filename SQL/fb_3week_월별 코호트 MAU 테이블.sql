@@ -5,9 +5,9 @@
 
 
 SELECT
-	cohort_month,
-	DATEDIFF(month, cohort_month, visited_month)+1 month_N,
-	COUNT(DISTINCT cohort.userid) unique_users
+	cohort_month, -- 피봇테이블에서 행
+	DATEDIFF(month, cohort_month, visited_month)+1 month_N, -- 피봇테이블에서 열
+	COUNT(DISTINCT cohort.userid) unique_users --피봇테이블에서 값
   
 FROM(
 	SELECT
