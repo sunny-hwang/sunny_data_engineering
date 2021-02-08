@@ -25,11 +25,10 @@ tables = [
 ]
 
 
-# s3_bucket, local_dir
+# s3_bucket, local_dir Variable로 사용하기
+
 #s3_bucket = 'grepp-data-engineering'
 s3_bucket = Variable.get("s3_bucket")
-
-
 #local_dir = '/var/lib/airflow/data/'  # 이를 꼭 본인의 airflow 서버에서 디렉토리로 만들어주어야 함. 실제 프로덕션에서는 공간이 충분한 폴더 (volume)로 맞춰준다
 local_dir = Variable.get("airflow_local_dir")
 
