@@ -86,7 +86,7 @@ class PostgresToS3Operator(BaseOperator):
     def execute(self, context):
 
 
-        #redshift 테이블을 파일로 떨굼
+        #postgres 테이블을 파일로 떨굼
         #write_local_dir 함수는 언제 호출되나?
         file_no = 0
         filename = self.filename.format(file_no)
